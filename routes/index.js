@@ -30,7 +30,7 @@ router.post('/submit', function(req, res) {
 
 router.get('/update/:id', function(req, res) {
     UserModal.findOne({_id: req.params.id})
-    .then(function(name) {
+    .then(function(game) {
       res.render('update', {game})
     })
 })
